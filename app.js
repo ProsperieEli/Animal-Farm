@@ -13,7 +13,7 @@
 
 
   noise.addEventListener('click', () => {
-    horseNoise.play()
+    playSoundAndChangeText(horseNoise, 'Horse')
   });
 
   const myCat = document.getElementById('cat-noise')
@@ -21,23 +21,36 @@
   const catSound = document.getElementById('Cat')
 
   catSound.addEventListener('click', () => {
-    myCat.play()
+    playSoundAndChangeText(myCat, 'cat')
   });
 
   const myDog = document.getElementById('dog-noise')
   const dogButton = document.getElementById('Dog')
   const dogPhoto = document.getElementById('dog-img')
 
+
+  function playSoundAndChangeText(sound, animalName) {
+    //Use "sound" instead of dogSound to keep it generic
+    sound.play();
+    h2el.textContent = animalName;
+  }
+  
   dogButton.addEventListener('click', () => {
-    myDog.play()
+    playSoundAndChangeText(myDog, 'dog'); 
   })
 
   const h2el = document.querySelector('h2');
 
-  dogButton.addEventListener('keydown', (event) => {
+  document.addEventListener('keydown', (event) => {
     if (event.key === 'd'){
-      myDog.play();
-      h2el.textContent = 'Dog';
+      playSoundAndChangeText(myDog, 'Dog');
     }
+    
+    if (event.key === 'c'){
+      playSoundAndChangeText(myCat, 'Cat');
+    }
+      if (event.key === 'h'){
+        playSoundAndChangeText(horseNoise, 'horse');
+      }
+    
   })
-  
