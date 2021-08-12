@@ -15,3 +15,19 @@
   noise.addEventListener('click', () => {
     horseNoise.play()
   });
+
+  const myCat = document.getElementById('cat-noise')
+  const catPhoto = document.getElementById('Cat-img')
+  const catSound = document.getElementById('Cat')
+
+  catSound.addEventListener('click', () => {
+    myCat.play()
+  });
+
+  const myDog = document.getElementById('dog-noise')
+  const dogButton = document.getElementById('Dog')
+  const dogPhoto = document.getElementById('dog-img')
+
+  dogButton.addEventListener('click', () => {
+    myDog.play()
+  })

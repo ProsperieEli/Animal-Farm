@@ -7,7 +7,7 @@ body {
     --color4: hsla(187, 41%, 94%, 1);
     --color5: hsla(170, 28%, 95%, 1); */
 
-    color1: rgb(192, 147, 13);
+    --color1: rgb(192, 147, 13);
     --color2: hsla(135, 65%, 98%, 1);
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
@@ -111,3 +111,17 @@ footer {
     }
 
   }
+  #Noise{
+      font-size: 50px;
+  }
+  #Dog{
+      font-size: 50px;
+      color: red;
+  }
+  #Dog:hover{opacity: 50px;}
+  #Cat{
+      font-size: 50px;
+      color: blue;
+      
+  }
+  #Cat:hover{opacity: 10;}
