@@ -40,7 +40,7 @@
   })
 
   const h2el = document.querySelector('h2');
-
+  //You only need ONE document.addeventlistener. That was the original issue with the code
   document.addEventListener('keydown', (event) => {
     if (event.key === 'd'){
       playSoundAndChangeText(myDog, 'Dog');
