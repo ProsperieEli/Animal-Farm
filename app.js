@@ -31,3 +31,13 @@
   dogButton.addEventListener('click', () => {
     myDog.play()
   })
+
+  const h2el = document.querySelector('h2');
+
+  dogButton.addEventListener('keydown', (event) => {
+    if (event.key === 'd'){
+      myDog.play();
+      h2el.textContent = 'Dog';
+    }
+  })
+  
